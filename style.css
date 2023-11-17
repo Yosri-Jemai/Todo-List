@@ -18,3 +18,75 @@
   padding: 40px 30px 70px;
   border-radius: 12px;
 }
+.todo h2{
+  color: #002765;
+  display: flex;
+  align-items:center;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  
+}
+.todo h2 img{
+  width: 36px;
+  margin-left: 12px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #edeef0;
+  border-radius: 30px;
+  /* overflow: hidden; */
+  padding-left: 20px;
+  margin-bottom: 25px;
+
+}
+input{
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 16px;
+}
+button{
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ff5c4a;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+button:hover{
+  background: #f54d3a;
+}
+ul li{
+  position: relative;
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+}
+ul li::before{
+  content: '';
+  position: absolute;
+   height: 28px;
+   width: 28px;
+   border-radius: 50%;
+   background-image: url(images/unchecked.png);
+   background-size: cover;
+   background-position: center;
+   top: 8px;
+   left: 8px;
+
+}
+ul li.checked{
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before{
+  background-image: url(images/checked.png);
+}
